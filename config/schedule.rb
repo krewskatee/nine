@@ -18,7 +18,7 @@
 # end
 
 every 1.minute do
-  runner "Pick.send_text(Pick.pick)"
+  take "test:send_text"
 end
 
 # Learn more: http://github.com/javan/whenever
