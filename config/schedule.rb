@@ -18,8 +18,7 @@
 # end
 
 every 1.minute do
-  @picker = Picker.first
-  @picker.send_text(@picker.pick)
+  runner "Pick.send_text(Pick.pick)"
 end
 
 # Learn more: http://github.com/javan/whenever
