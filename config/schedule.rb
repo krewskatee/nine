@@ -18,7 +18,7 @@
 # end
 
 every 1.minute do
-  take "test:send_text"
+  rake "test:send_text"
 end
 
 # Learn more: http://github.com/javan/whenever
