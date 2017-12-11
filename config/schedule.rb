@@ -17,4 +17,9 @@
 #   runner "AnotherModel.prune_old_records"
 # end
 
+every 1.minute do
+  @picker = Picker.first
+  @picker.send_text(@picker.pick)
+end
+
 # Learn more: http://github.com/javan/whenever
