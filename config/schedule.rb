@@ -6,6 +6,7 @@
 # Example:
 #
 set :output, "~/Desktop/cron.log"
+set :environment, :development
 #
 # every 2.hours do
 #   command "/usr/bin/some_great_command"
