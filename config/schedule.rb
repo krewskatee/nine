@@ -18,7 +18,7 @@ set :environment, :development
 #   runner "AnotherModel.prune_old_records"
 # end
 
-every 1.minute do
+every 1.hour do
   rake "test:send_text"
 end
 
